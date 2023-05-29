@@ -5,7 +5,7 @@ const User = require('../models/user.model');
 
 
 router.get('/menu', async (req,res)=>{
-    const users = await User.find();
+    const users = await User.findById("205291211");
     res.json(users);
 });
 
